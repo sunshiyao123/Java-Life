@@ -121,14 +121,30 @@
 //递归实现阶乘
 // public class day2{
 //     public static void main(String[] args){
-//         System.out.println(factorial(6));
+//         System.out.println(factorial(20));
 //     }
-//     public static int factorial(int x){
+//     public static long factorial(int x){ //返回的一个值为long
 //         if(x == 1){
-//             return 1;
+//             return 1L; //把出口的数据类型转为long
 //         }
 //         else{
 //             return x * factorial(x-1);
 //         }
 //     } 
+// }
+
+// public class day2{
+//     public static void main(String[] args){
+//         int[] data = new int[]{1,2,3,4,5,6,7,8,9}
+//         quickSort(data);
+//         printArray(data);
+//     }
+//     public static void printArray(int[] temp){
+//         for(int i = 0; i < temp.length; i++){
+//             System.out.print(temp[i]);
+//         }
+//     }
+//     public static void quickSort(int[] temp){
+        
+//     }
 // }

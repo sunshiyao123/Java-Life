@@ -249,42 +249,47 @@
 // }
 
 //父类
-class Person{
-    private String name;
-    private int age;
-    public void setName(String name){
-        this.name = name;
-    }
-    public void setAge(int age){
-        this.age = age;
-    }
-    public String getName(){
-        return name;
-    }
-    public int getAge(){
-        return age;
-    }
-}
-//子类
-class Student extends Person{
-    private String school;
-    public void setSchool(String school){
-        this.school = school;
-    }
-    public String getSchool(){
-        return school;
-    }
-}
+// class Person{
+//     private String name;
+//     private int age;
+//     public void setName(String name){
+//         this.name = name;
+//     }
+//     public void setAge(int age){
+//         this.age = age;
+//     }
+//     public String getName(){
+//         return name;
+//     }
+//     public int getAge(){
+//         return age;
+//     }
+// }
+// //子类
+// class Student extends Person{
+//     private String school;
+//     public void setSchool(String school){
+//         this.school = school;
+//     }
+//     public String getSchool(){
+//         return school;
+//     }
+//     public String getMessage(){
+//         return (getName() +"现在"+ getAge() +"岁在"+ getSchool() +"上学");
+//     }
+    
+// }
 
-public class Day5{
-    public static void main(String[] ages){
-        Person stu = new Student();
-        //stu.setName("刘苗");
-        //stu.setAge(20);
-        stu.setSchool("西科大");
-       // System.out.println(stu.getName());
-        //System.out.println(stu.getAge());
-        System.out.println(stu.getSchool());
-    }
-}
+// public class Day5{
+//     public static void main(String[] ages){
+//         Student stu = new Student();
+//         stu.setName("刘苗");
+//         stu.setAge(20);
+//         stu.setSchool("西科大");
+//         // System.out.println(stu.getName());
+//         // System.out.println(stu.getAge());
+//         // System.out.println(stu.getSchool());
+//         System.out.println(stu.getMessage());
+//     }
+// }
 

@@ -1,15 +1,36 @@
 //类的定义
 class Person{
-    //定义属性
-    public String name = "诗尧";
-    public int age;
+    //使用private封装属性
+    private String name;
+    private int age;
+
+    public Person(){
+        System.out.println("*********");
+    }
+    public void setName(String n){
+        name = n;
+    }
+    public void setAge(int a){
+        if(n <= 0){
+            age = 0;
+        }
+        else{
+            age = a;
+        }
+    }
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
 
 
     //构造方法进行初始化赋值
-    public Person(String n, int i){
-        name = n;
-        age = i;
-    }
+    // public Person(String n, int i){
+    //     name = n;
+    //     age = i;
+    // }
 
 
 
@@ -37,30 +58,38 @@ class Person{
 
 
     //定义方法
-    public void fun(){
-        System.out.println(name+"在"+age+"岁学习");
-    }
-    public void work(){
-        if(age < 22){
-            System.out.println("还在上学");
-        }
-        else{
-            System.out.println("应该工作了");
-        }
-    }
+    // public void fun(){
+    //     System.out.println(name+"在"+age+"岁学习");
+    // }
+    // public void work(){
+    //     if(age < 22){
+    //         System.out.println("还在上学");
+    //     }
+    //     else{
+    //         System.out.println("应该工作了");
+    //     }
+    // }
 }
 //主方法
 public class Day4{
     public static void main(String[] args){
+
+        //封装后的进行属性访问
+        Person per = new Person();
+        per.setName("刘苗");
+        per.setAge(20);
+        System.out.println(per.getName());
+        System.out.println(per.getAge());
+        
         //根据Person类产生一个Person对象
-        Person per = new Person("刘苗",20);
+        //Person per = new Person("刘苗",20);
 
         //匿名对象
         //new Person("刘苗",20).work();
 
         // per.name = "诗尧";
         // per.age = 20;
-         per.fun();
-         per.work();
+         //per.fun();
+         //per.work();
     }
 }
